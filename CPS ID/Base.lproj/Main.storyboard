@@ -109,6 +109,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="regAdvisoryNumber" destination="px4-9L-vbf" id="Pmq-8m-ySm"/>
+                        <outlet property="regIDNumber" destination="AaU-sH-Z5d" id="CP9-Df-UoC"/>
+                        <outlet property="regLunchPeriod" destination="sqZ-5C-mai" id="4qT-AH-Y8C"/>
+                        <outlet property="regName" destination="gn5-5u-8jg" id="A09-AS-ogf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fpI-YI-lPb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,6 +9,10 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    @IBOutlet weak var regName: UITextField!
+    @IBOutlet weak var regAdvisoryNumber: UITextField!
+    @IBOutlet weak var regLunchPeriod: UITextField!
+    @IBOutlet weak var regIDNumber: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
