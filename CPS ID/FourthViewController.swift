@@ -9,9 +9,10 @@
 import UIKit
 
 class FourthViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
+    @IBOutlet weak var imageView: UIImageView!
 
     let imagePicker = UIImagePickerController()
-    @IBOutlet weak var imageView: UIImageView!
+    var idInfo3 = registrationInfo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,12 @@ class FourthViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBAction func onUploadImageTapped(_ sender: Any) {
         imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
         present(imagePicker, animated: true, completion: nil)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dvc = segue.destination as! FifthViewController
+        idInfo3.profilePic = imageView
+        dvc.idInfo4 = idInfo3
     }
 
 }

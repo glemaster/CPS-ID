@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegistrationInfo: NSObject {
+class registrationInfo: NSObject {
     
     var name = String()
     var advisoryNum = Int()

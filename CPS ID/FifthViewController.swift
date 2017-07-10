@@ -12,7 +12,7 @@ class FifthViewController: UIViewController, UIImagePickerControllerDelegate, UI
     
     let imagePicker = UIImagePickerController()
     @IBOutlet weak var imageView: UIImageView!
-    
+    var idInfo4 = registrationInfo()
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
