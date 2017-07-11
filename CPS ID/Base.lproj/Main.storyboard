@@ -250,6 +250,9 @@
                                 <rect key="frame" x="156" y="407" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="onDoneButtonTapped:" destination="Lun-9C-qym" eventType="touchUpInside" id="ddO-mK-V4E"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Im1-wm-Ij9">
                                 <rect key="frame" x="62" y="220" width="250" height="100"/>
