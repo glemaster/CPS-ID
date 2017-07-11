@@ -43,7 +43,7 @@ class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let dvc = segue.destination as! FourthViewController
+        let dvc = segue.destination as! FinalViewController
         idInfo2.school = scrollTextField.text!
         dvc.idInfo3 = idInfo2
     }
