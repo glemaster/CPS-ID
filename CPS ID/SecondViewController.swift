@@ -9,27 +9,31 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    @IBOutlet weak var regName: UITextField!
+    @IBOutlet weak var regAdvisoryNumber: UITextField!
+    @IBOutlet weak var regLunchPeriod: UITextField!
+    @IBOutlet weak var regIDNumber: UITextField!
+    
+    var idInfo = registrationInfo()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let dvc = segue.destination as! ThirdViewController
+        idInfo.name = regName.text!
+        idInfo.advisoryNum = Int(regAdvisoryNumber.text!)!
+        idInfo.lunchPeriod = Int(regLunchPeriod.text!)!
+        idInfo.idNum = Int(regIDNumber.text!)!
+        
+        dvc.idInfo2 = idInfo
+  
     }
-    */
-
 }

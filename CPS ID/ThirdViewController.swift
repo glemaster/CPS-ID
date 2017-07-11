@@ -12,6 +12,7 @@ class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     @IBOutlet weak var scrollTextField: UITextField!
     var data = ["Northside College Prep", "Walter Payton College Prep"]
     var picker = UIPickerView()
+    var idInfo2 = registrationInfo()
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -41,6 +42,10 @@ class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         super.didReceiveMemoryWarning()
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dvc = segue.destination as! FourthViewController
+        idInfo2.school = scrollTextField.text!
+        dvc.idInfo3 = idInfo2
+    }
 
 }
