@@ -9,6 +9,7 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
     @IBOutlet weak var regName: UITextField!
     @IBOutlet weak var regAdvisoryNumber: UITextField!
     @IBOutlet weak var regLunchPeriod: UITextField!
@@ -19,13 +20,10 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -36,7 +34,6 @@ class SecondViewController: UIViewController {
         idInfo.idNum = Int(regIDNumber.text!)!
         
         dvc.idInfo2 = idInfo
-    
   
     }
 }
