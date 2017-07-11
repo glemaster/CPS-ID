@@ -17,7 +17,4 @@ class registrationInfo: NSObject {
     var school = String()
     var profilePic = Data()
     
-    
-    
-
 }
