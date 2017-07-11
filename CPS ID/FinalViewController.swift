@@ -22,6 +22,8 @@ class FinalViewController: UIViewController {
     
     @IBOutlet weak var lunchLabel: UILabel!
     
+    var idInfo3 = registrationInfo()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
