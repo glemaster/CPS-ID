@@ -10,6 +10,17 @@ import UIKit
 
 class FinalViewController: UIViewController {
 
+    @IBOutlet weak var schoolImage: UIImageView!
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var IDImage: UIImageView!
+    
+    @IBOutlet weak var IDLabel: UILabel!
+    
+    @IBOutlet weak var advisoryLabel: UILabel!
+    
+    @IBOutlet weak var lunchLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

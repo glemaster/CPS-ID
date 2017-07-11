@@ -217,6 +217,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="IDImage" destination="SFR-3W-mbi" id="JBb-nk-GEZ"/>
+                        <outlet property="IDLabel" destination="OAy-bL-tN3" id="s5s-al-OAi"/>
+                        <outlet property="advisoryLabel" destination="BM4-vO-Fn1" id="pVb-F4-6lt"/>
+                        <outlet property="lunchLabel" destination="xL5-2T-nOG" id="7t9-mM-aCq"/>
+                        <outlet property="nameLabel" destination="PH2-cC-G9M" id="3yp-5U-kkC"/>
+                        <outlet property="schoolImage" destination="ZMw-v8-KsB" id="Anj-6z-Agh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bsY-kg-OiO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
