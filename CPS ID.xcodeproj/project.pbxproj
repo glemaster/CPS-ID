@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		680C43851F14F5FE0010647E /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C43841F14F5FE0010647E /* FinalViewController.swift */; };
 		6814EDFA1F101A3200DA7381 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6814EDF91F101A3200DA7381 /* AppDelegate.swift */; };
 		6814EDFC1F101A3200DA7381 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6814EDFB1F101A3200DA7381 /* ViewController.swift */; };
 		6814EDFF1F101A3200DA7381 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6814EDFD1F101A3200DA7381 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		680C43841F14F5FE0010647E /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		6814EDF61F101A3200DA7381 /* CPS ID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CPS ID.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6814EDF91F101A3200DA7381 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6814EDFB1F101A3200DA7381 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				6814EDFB1F101A3200DA7381 /* ViewController.swift */,
 				684C47C71F13A11F00912F11 /* SecondViewController.swift */,
 				684C47C91F13A16E00912F11 /* ThirdViewController.swift */,
+				680C43841F14F5FE0010647E /* FinalViewController.swift */,
 				6814EDFD1F101A3200DA7381 /* Main.storyboard */,
 				6814EE001F101A3200DA7381 /* Assets.xcassets */,
 				6814EE021F101A3200DA7381 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				680C43851F14F5FE0010647E /* FinalViewController.swift in Sources */,
 				684C47C81F13A11F00912F11 /* SecondViewController.swift in Sources */,
 				6814EDFC1F101A3200DA7381 /* ViewController.swift in Sources */,
 				684C47CA1F13A16E00912F11 /* ThirdViewController.swift in Sources */,
