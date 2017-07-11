@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52ABD3A01F150E8C0002E82C /* RegistrationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ABD39F1F150E8C0002E82C /* RegistrationInfo.swift */; };
 		680C43851F14F5FE0010647E /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C43841F14F5FE0010647E /* FinalViewController.swift */; };
 		6814EDFA1F101A3200DA7381 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6814EDF91F101A3200DA7381 /* AppDelegate.swift */; };
 		6814EDFC1F101A3200DA7381 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6814EDFB1F101A3200DA7381 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52ABD39F1F150E8C0002E82C /* RegistrationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationInfo.swift; sourceTree = "<group>"; };
 		680C43841F14F5FE0010647E /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		6814EDF61F101A3200DA7381 /* CPS ID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CPS ID.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6814EDF91F101A3200DA7381 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,8 +110,8 @@
 				684C47C71F13A11F00912F11 /* SecondViewController.swift */,
 				684C47C91F13A16E00912F11 /* ThirdViewController.swift */,
 				680C43841F14F5FE0010647E /* FinalViewController.swift */,
+				52ABD39F1F150E8C0002E82C /* RegistrationInfo.swift */,
 				6814EDFD1F101A3200DA7381 /* Main.storyboard */,
-				5284A2931F140E2800B0B7FA /* RegistrationInfo.swift */,
 				6814EE001F101A3200DA7381 /* Assets.xcassets */,
 				6814EE021F101A3200DA7381 /* LaunchScreen.storyboard */,
 				6814EE051F101A3200DA7381 /* Info.plist */,
@@ -271,11 +273,10 @@
 			files = (
 				680C43851F14F5FE0010647E /* FinalViewController.swift in Sources */,
 				684C47C81F13A11F00912F11 /* SecondViewController.swift in Sources */,
-				5284A2941F140E2800B0B7FA /* RegistrationInfo.swift in Sources */,
+				52ABD3A01F150E8C0002E82C /* RegistrationInfo.swift in Sources */,
 				6814EDFC1F101A3200DA7381 /* ViewController.swift in Sources */,
 				684C47CA1F13A16E00912F11 /* ThirdViewController.swift in Sources */,
 				6814EDFA1F101A3200DA7381 /* AppDelegate.swift in Sources */,
-				5284A2901F1407FE00B0B7FA /* FourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
