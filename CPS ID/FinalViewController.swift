@@ -21,18 +21,15 @@ class FinalViewController: UIViewController {
     @IBOutlet weak var advisoryLabel: UILabel!
     
     @IBOutlet weak var lunchLabel: UILabel!
+    var idInfo5 = registrationInfo()
     
-    var idInfo3 = registrationInfo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }
