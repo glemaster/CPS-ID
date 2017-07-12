@@ -17,7 +17,7 @@ class registrationInfo: Object  {
     dynamic var lunchPeriod = Int()
     dynamic var idNum = Int()
     dynamic var school = String()
-    dynamic var profilePic = UIImage()
-    dynamic var barcodePic = UIImage()
+    dynamic var profilePic = Data()
+    dynamic var barcodePic = Data()
     
 }

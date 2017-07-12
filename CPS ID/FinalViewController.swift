@@ -24,9 +24,9 @@ class FinalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        schoolImage.image = idInfo5.profilePic
+        schoolImage.image = UIImage(data : idInfo5.profilePic)
         nameLabel.text = idInfo5.name
-        IDImage.image = idInfo5.barcodePic
+        IDImage.image = UIImage(data : idInfo5.barcodePic)
         IDLabel.text = String(idInfo5.idNum)
         advisoryLabel.text = String(idInfo5.advisoryNum)
         lunchLabel.text = String(idInfo5.lunchPeriod)

@@ -41,7 +41,7 @@ class FifthViewController: UIViewController, UIImagePickerControllerDelegate, UI
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let dvc = segue.destination as! FinalViewController
-        idInfo4.barcodePic = imageView.image!
+        idInfo4.barcodePic = UIImagePNGRepresentation(imageView.image!)!
         dvc.idInfo5 = idInfo4
         
         if let information = self.detailItem {
@@ -49,9 +49,9 @@ class FifthViewController: UIViewController, UIImagePickerControllerDelegate, UI
                 information.name = idInfo4.name
                 information.lunchPeriod = idInfo4.lunchPeriod
                 information.idNum = idInfo4.idNum
-                information.barcodePic = imageView.image!
+                information.barcodePic = UIImagePNGRepresentation(imageView.image!)!
                 information.advisoryNum = idInfo4.advisoryNum
-                information.profilePic = idInfo4.profilePic
+                information.profilePic = (idInfo4.profilePic)
                 information.school = idInfo4.school
             })
         }
