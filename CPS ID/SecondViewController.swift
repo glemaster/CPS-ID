@@ -14,7 +14,6 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var regAdvisoryNumber: UITextField!
     @IBOutlet weak var regLunchPeriod: UITextField!
     @IBOutlet weak var regIDNumber: UITextField!
-    
     var idInfo = registrationInfo()
 
     override func viewDidLoad() {

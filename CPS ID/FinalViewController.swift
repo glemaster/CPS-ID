@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class FinalViewController: UIViewController {
 
@@ -16,7 +17,9 @@ class FinalViewController: UIViewController {
     @IBOutlet weak var IDLabel: UILabel!
     @IBOutlet weak var advisoryLabel: UILabel!
     @IBOutlet weak var lunchLabel: UILabel!
+    let realm = try! Realm()
     var idInfo5 = registrationInfo()
+    let realmRef = FifthViewController()
     
     
     override func viewDidLoad() {

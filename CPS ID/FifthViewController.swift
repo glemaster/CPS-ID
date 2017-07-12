@@ -7,15 +7,24 @@
 //
 
 import UIKit
+import RealmSwift
 
 class FifthViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     
     let imagePicker = UIImagePickerController()
     @IBOutlet weak var imageView: UIImageView!
     var idInfo4 = registrationInfo()
+    let realm = try! Realm()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
+    }
+    
+    var detailItem: registrationInfo? {
+        didSet {
+            
+        }
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -24,7 +33,7 @@ class FifthViewController: UIViewController, UIImagePickerControllerDelegate, UI
             self.imageView.image = selectedImage
         }
     }
-
+    
     @IBAction func onUploadImageTapped(_ sender: Any) {
         imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
         present(imagePicker, animated: true, completion: nil)
@@ -34,6 +43,19 @@ class FifthViewController: UIViewController, UIImagePickerControllerDelegate, UI
         let dvc = segue.destination as! FinalViewController
         idInfo4.barcodePic = imageView.image!
         dvc.idInfo5 = idInfo4
+        
+        if let information = self.detailItem {
+            try! realm.write({
+                information.name = idInfo4.name
+                information.lunchPeriod = idInfo4.lunchPeriod
+                information.idNum = idInfo4.idNum
+                information.barcodePic = imageView.image!
+                information.advisoryNum = idInfo4.advisoryNum
+                information.profilePic = idInfo4.profilePic
+                information.school = idInfo4.school
+            })
+        }
+        
     }
     
 }
