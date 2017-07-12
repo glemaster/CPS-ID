@@ -51,7 +51,7 @@ class FifthViewController: UIViewController, UIImagePickerControllerDelegate, UI
                 information.idNum = idInfo4.idNum
                 information.barcodePic = UIImagePNGRepresentation(imageView.image!)!
                 information.advisoryNum = idInfo4.advisoryNum
-                information.profilePic = (idInfo4.profilePic)
+                information.profilePic = idInfo4.profilePic
                 information.school = idInfo4.school
             })
         }

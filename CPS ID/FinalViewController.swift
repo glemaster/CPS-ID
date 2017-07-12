@@ -30,6 +30,13 @@ class FinalViewController: UIViewController {
         IDLabel.text = String(idInfo5.idNum)
         advisoryLabel.text = String(idInfo5.advisoryNum)
         lunchLabel.text = String(idInfo5.lunchPeriod)
+        print(idInfo5.name)
+        print(idInfo5.advisoryNum)
+        print(idInfo5.lunchPeriod)
+        print(idInfo5.idNum)
+        print(idInfo5.school)
+        print(idInfo5.barcodePic)
+        print(idInfo5.profilePic)
     }
 
     override func didReceiveMemoryWarning() {

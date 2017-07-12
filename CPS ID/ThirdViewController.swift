@@ -35,10 +35,6 @@ class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         picker.delegate = self
         picker.dataSource = self
         scrollTextField.inputView = picker
-        print(idInfo2.name)
-        print(idInfo2.advisoryNum)
-        print(idInfo2.lunchPeriod)
-        print(idInfo2.idNum)
     }
 
     override func didReceiveMemoryWarning() {
