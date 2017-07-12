@@ -8,15 +8,16 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 
-class registrationInfo: NSObject  {
+class registrationInfo: Object  {
     
-    var name = String()
-    var advisoryNum = Int()
-    var lunchPeriod = Int()
-    var idNum = Int()
-    var school = String()
-    var profilePic = UIImage()
-    var barcodePic = UIImage()
+    dynamic var name = String()
+    dynamic var advisoryNum = Int()
+    dynamic var lunchPeriod = Int()
+    dynamic var idNum = Int()
+    dynamic var school = String()
+    dynamic var profilePic = UIImage()
+    dynamic var barcodePic = UIImage()
     
 }

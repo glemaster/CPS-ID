@@ -16,7 +16,6 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var regIDNumber: UITextField!
     
     var idInfo = registrationInfo()
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
