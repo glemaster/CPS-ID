@@ -33,7 +33,7 @@ class FourthViewController: UIViewController, UIImagePickerControllerDelegate, U
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let dvc = segue.destination as! FifthViewController
-        idInfo3.profilePic =
+        idInfo3.profilePic = imageView.image!
         dvc.idInfo4 = idInfo3
     }
 }

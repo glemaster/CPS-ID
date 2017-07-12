@@ -30,7 +30,10 @@ class FifthViewController: UIViewController, UIImagePickerControllerDelegate, UI
         present(imagePicker, animated: true, completion: nil)
     }
     
-    @IBAction func onDoneButtonTapped(_ sender: Any) {        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dvc = segue.destination as! FinalViewController
+        idInfo4.barcodePic = imageView.image!
+        dvc.idInfo5 = idInfo4
     }
     
 }
