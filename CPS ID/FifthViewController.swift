@@ -45,7 +45,7 @@ class FifthViewController: UIViewController, UIImagePickerControllerDelegate, UI
         dvc.idInfo5 = idInfo4
         
         if let information = self.detailItem {
-            try! realm.write({
+            try! self.realm.write {
                 information.name = idInfo4.name
                 information.lunchPeriod = idInfo4.lunchPeriod
                 information.idNum = idInfo4.idNum
@@ -53,7 +53,7 @@ class FifthViewController: UIViewController, UIImagePickerControllerDelegate, UI
                 information.advisoryNum = idInfo4.advisoryNum
                 information.profilePic = idInfo4.profilePic
                 information.school = idInfo4.school
-            })
+            }
         }
         
     }

@@ -27,9 +27,9 @@ class FinalViewController: UIViewController {
         schoolImage.image = UIImage(data : idInfo5.profilePic)
         nameLabel.text = idInfo5.name
         IDImage.image = UIImage(data : idInfo5.barcodePic)
-        IDLabel.text = String(idInfo5.idNum)
-        advisoryLabel.text = String(idInfo5.advisoryNum)
-        lunchLabel.text = String(idInfo5.lunchPeriod)
+        IDLabel.text = "ID Number \(String(idInfo5.idNum))"
+        advisoryLabel.text = "Adv.\(String(idInfo5.advisoryNum))"
+        lunchLabel.text = "Lunch \(String(idInfo5.lunchPeriod))"
         print(idInfo5.name)
         print(idInfo5.advisoryNum)
         print(idInfo5.lunchPeriod)

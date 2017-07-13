@@ -240,6 +240,7 @@
 				TargetAttributes = {
 					6814EDF51F101A3200DA7381 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = E26TACMX2D;
 						ProvisioningStyle = Automatic;
 					};
 					6814EE091F101A3200DA7381 = {
@@ -464,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E26TACMX2D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -480,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E26TACMX2D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
