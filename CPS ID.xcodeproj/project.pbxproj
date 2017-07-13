@@ -13,6 +13,7 @@
 		5284A29D1F1669E700B0B7FA /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5284A29A1F1669E700B0B7FA /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5284A29E1F1669E700B0B7FA /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5284A29B1F1669E700B0B7FA /* RealmSwift.framework */; };
 		5284A29F1F1669E700B0B7FA /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5284A29B1F1669E700B0B7FA /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5284A2A41F17FF4000B0B7FA /* ListOfSchools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284A2A31F17FF4000B0B7FA /* ListOfSchools.swift */; };
 		52ABD3A01F150E8C0002E82C /* RegistrationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ABD39F1F150E8C0002E82C /* RegistrationInfo.swift */; };
 		680C43851F14F5FE0010647E /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C43841F14F5FE0010647E /* FinalViewController.swift */; };
 		680C43D81F17EF950010647E /* open-sans in Resources */ = {isa = PBXBuildFile; fileRef = 680C43D71F17EF950010647E /* open-sans */; };
@@ -64,6 +65,7 @@
 		5284A2981F155F1C00B0B7FA /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		5284A29A1F1669E700B0B7FA /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		5284A29B1F1669E700B0B7FA /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		5284A2A31F17FF4000B0B7FA /* ListOfSchools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfSchools.swift; sourceTree = "<group>"; };
 		52ABD39F1F150E8C0002E82C /* RegistrationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationInfo.swift; sourceTree = "<group>"; };
 		680C43841F14F5FE0010647E /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		680C43D71F17EF950010647E /* open-sans */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "open-sans"; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				52ABD39F1F150E8C0002E82C /* RegistrationInfo.swift */,
 				6814EDFD1F101A3200DA7381 /* Main.storyboard */,
 				6814EE001F101A3200DA7381 /* Assets.xcassets */,
+				5284A2A31F17FF4000B0B7FA /* ListOfSchools.swift */,
 				680C43D71F17EF950010647E /* open-sans */,
 				6814EE021F101A3200DA7381 /* LaunchScreen.storyboard */,
 				6814EE051F101A3200DA7381 /* Info.plist */,
@@ -313,6 +316,7 @@
 				52ABD3A01F150E8C0002E82C /* RegistrationInfo.swift in Sources */,
 				5284A2971F155F0800B0B7FA /* FourthViewController.swift in Sources */,
 				5284A2991F155F1C00B0B7FA /* FifthViewController.swift in Sources */,
+				5284A2A41F17FF4000B0B7FA /* ListOfSchools.swift in Sources */,
 				6814EDFC1F101A3200DA7381 /* ViewController.swift in Sources */,
 				684C47CA1F13A16E00912F11 /* ThirdViewController.swift in Sources */,
 				6814EDFA1F101A3200DA7381 /* AppDelegate.swift in Sources */,

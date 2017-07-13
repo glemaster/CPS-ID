@@ -11,6 +11,7 @@ import RealmSwift
 
 class FinalViewController: UIViewController {
 
+    @IBOutlet weak var schoolNameLabel: UILabel!
     @IBOutlet weak var schoolImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var IDImage: UIImageView!
@@ -21,11 +22,11 @@ class FinalViewController: UIViewController {
     var idInfo5 = RegistrationInfo()
     let realmRef = FifthViewController()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         schoolImage.image = UIImage(data : idInfo5.profilePic)
         nameLabel.text = idInfo5.name
+        schoolNameLabel.text = idInfo5.school
         IDImage.image = UIImage(data : idInfo5.barcodePic)
         IDLabel.text = "ID Number \(String(idInfo5.idNum))"
         advisoryLabel.text = "Adv.\(String(idInfo5.advisoryNum))"

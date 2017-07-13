@@ -10,7 +10,7 @@ import UIKit
 
 class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     @IBOutlet weak var scrollTextField: UITextField!
-    var data = ["Northside College Prep", "Walter Payton College Prep"]
+    var data = listOfSchools()
     var picker = UIPickerView()
     var idInfo2 = RegistrationInfo()
     
@@ -19,15 +19,15 @@ class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return data.count
+        return data.list.count
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        scrollTextField.text = data[row]
+        scrollTextField.text = data.list[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return data[row]
+        return data.list[row]
     }
     
     override func viewDidLoad() {
