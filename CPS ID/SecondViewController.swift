@@ -25,13 +25,21 @@ class SecondViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let dvc = segue.destination as! ThirdViewController
-        idInfo.name = regName.text!
-        idInfo.advisoryNum = Int(regAdvisoryNumber.text!)!
-        idInfo.lunchPeriod = Int(regLunchPeriod.text!)!
-        idInfo.idNum = Int(regIDNumber.text!)!
-        
-        dvc.idInfo2 = idInfo
-  
+        if regName.text == "" ||
+           regAdvisoryNumber.text == "" ||
+           regLunchPeriod.text == "" ||
+           regIDNumber.text == "" {
+            let invalid = UIAlertController(title: "Please Enter All Text Fields", message: nil, preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            invalid.addAction(okAction)
+        }
+        else {
+            let dvc = segue.destination as! ThirdViewController
+            idInfo.name = regName.text!
+            idInfo.advisoryNum = Int(regAdvisoryNumber.text!)!
+            idInfo.lunchPeriod = Int(regLunchPeriod.text!)!
+            idInfo.idNum = Int(regIDNumber.text!)!
+            dvc.idInfo2 = idInfo
+        }
     }
 }
