@@ -12,7 +12,7 @@ class FourthViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var imageView: UIImageView!
 
     let imagePicker = UIImagePickerController()
-    var idInfo3 = registrationInfo()
+    var idInfo3 = RegistrationInfo()
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -13,7 +13,7 @@ class FifthViewController: UIViewController, UIImagePickerControllerDelegate, UI
     
     let imagePicker = UIImagePickerController()
     @IBOutlet weak var imageView: UIImageView!
-    var idInfo4 = registrationInfo()
+    var idInfo4 = RegistrationInfo()
     let realm = try! Realm()
     
     override func viewDidLoad() {
@@ -21,7 +21,7 @@ class FifthViewController: UIViewController, UIImagePickerControllerDelegate, UI
         imagePicker.delegate = self
     }
     
-    var detailItem: registrationInfo? {
+    var detailItem: RegistrationInfo? {
         didSet {
             
         }

@@ -18,7 +18,7 @@ class FinalViewController: UIViewController {
     @IBOutlet weak var advisoryLabel: UILabel!
     @IBOutlet weak var lunchLabel: UILabel!
     let realm = try! Realm()
-    var idInfo5 = registrationInfo()
+    var idInfo5 = RegistrationInfo()
     let realmRef = FifthViewController()
     
     

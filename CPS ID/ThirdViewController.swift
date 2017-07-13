@@ -12,7 +12,7 @@ class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     @IBOutlet weak var scrollTextField: UITextField!
     var data = ["Northside College Prep", "Walter Payton College Prep"]
     var picker = UIPickerView()
-    var idInfo2 = registrationInfo()
+    var idInfo2 = RegistrationInfo()
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
