@@ -12,7 +12,10 @@ import RealmSwift
 class ViewController: UIViewController {
     
     let realm = try! Realm()
-    var id = RegistrationInfo()
+    lazy var id: Results<RegistrationInfo> = {
+        self.realm.objects(RegistrationInfo.self)
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +23,13 @@ class ViewController: UIViewController {
     }
     
     func testIfRealmIsFilledIn() {
-        if id.name != "" {
-            performSegue(withIdentifier: "realmSegue", sender: nil)
+        if id.count == 1 {
+            if id[0].name != "" {
+                performSegue(withIdentifier: "realmSegue", sender: nil)
+            }
+            else {
+                return
+            }
         }
     }
     
