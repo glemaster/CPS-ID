@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -53,24 +53,24 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join CPS ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J78-En-JN4">
-                                <rect key="frame" x="115" y="108" width="144" height="21"/>
+                                <rect key="frame" x="87" y="101" width="200" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="dsN-T7-tMp"/>
-                                    <constraint firstAttribute="width" constant="144" id="rvO-IW-OLQ"/>
+                                    <constraint firstAttribute="height" constant="40" id="Ft8-Pz-GGa"/>
+                                    <constraint firstAttribute="width" constant="200" id="bx4-em-fEV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.94257614209999996" green="0.94257614209999996" blue="0.94257614209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="J78-En-JN4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Chl-W2-2ra"/>
                             <constraint firstItem="lZQ-BM-rQg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JCS-3K-7Mg"/>
                             <constraint firstItem="QFz-jV-eYP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MN8-75-kNs"/>
                             <constraint firstItem="lZQ-BM-rQg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-88" id="NKF-dh-m8f"/>
-                            <constraint firstItem="J78-En-JN4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-215" id="Odk-mR-ghM"/>
+                            <constraint firstItem="J78-En-JN4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q5F-U0-IIw"/>
                             <constraint firstItem="QFz-jV-eYP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="13.5" id="qg7-lE-Lkb"/>
+                            <constraint firstItem="J78-En-JN4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-212.5" id="wqw-dM-ke2"/>
                         </constraints>
                     </view>
                     <connections>
@@ -95,22 +95,24 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gn5-5u-8jg">
                                 <rect key="frame" x="37" y="227" width="300" height="30"/>
+                                <color key="tintColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="I4l-Tx-FOT"/>
                                     <constraint firstAttribute="width" constant="300" id="PCx-NB-VdN"/>
                                 </constraints>
-                                <color key="textColor" red="0.94257614209999996" green="0.94257614209999996" blue="0.94257614209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Advisory number" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="px4-9L-vbf">
                                 <rect key="frame" x="36" y="265" width="300" height="30"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="61W-fB-bbI"/>
                                     <constraint firstAttribute="width" constant="300" id="Uzb-zw-jJJ"/>
                                 </constraints>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lunch period" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sqZ-5C-mai">
@@ -120,7 +122,7 @@
                                     <constraint firstAttribute="height" constant="30" id="kOu-YH-TAu"/>
                                 </constraints>
                                 <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID number" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AaU-sH-Z5d">
@@ -129,8 +131,8 @@
                                     <constraint firstAttribute="height" constant="30" id="cMZ-5C-Ogg"/>
                                     <constraint firstAttribute="width" constant="300" id="wO3-2P-mBN"/>
                                 </constraints>
-                                <color key="textColor" red="0.58974460660000005" green="0.17833661980000001" blue="0.2790109395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THR-G5-VYs">
@@ -140,7 +142,7 @@
                                     <constraint firstAttribute="width" constant="300" id="gvn-Ie-24i"/>
                                     <constraint firstAttribute="height" constant="40" id="ir7-pA-5EV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="18"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -154,7 +156,7 @@
                                     <constraint firstAttribute="width" constant="147" id="bdF-ZK-Kaz"/>
                                     <constraint firstAttribute="height" constant="40" id="wmt-mA-xkX"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -205,8 +207,8 @@
                                     <constraint firstAttribute="height" constant="30" id="RkX-KG-DkA"/>
                                     <constraint firstAttribute="width" constant="300" id="kWV-bc-pNE"/>
                                 </constraints>
-                                <color key="textColor" red="0.83213039340101524" green="0.83213039340101524" blue="0.83213039340101524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkH-N4-hnG">
@@ -216,7 +218,7 @@
                                     <constraint firstAttribute="width" constant="300" id="UcA-TD-Fg1"/>
                                     <constraint firstAttribute="height" constant="40" id="nzu-q5-doE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -237,7 +239,7 @@
                                     <constraint firstAttribute="height" constant="29" id="Ghb-b0-ZNl"/>
                                     <constraint firstAttribute="width" constant="222" id="HNZ-5S-A1v"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -281,7 +283,7 @@
                                     <constraint firstAttribute="width" constant="300" id="RUr-dm-epw"/>
                                     <constraint firstAttribute="height" constant="40" id="gI0-MT-qGg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -290,10 +292,10 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="uFO-CO-ZyH">
-                                <rect key="frame" x="112" y="163" width="150" height="140"/>
+                                <rect key="frame" x="112" y="163" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="SiA-8S-v0J"/>
-                                    <constraint firstAttribute="width" constant="150" id="V8i-2E-AGd"/>
+                                    <constraint firstAttribute="height" constant="150" id="EjW-Ah-TjB"/>
+                                    <constraint firstAttribute="width" constant="150" id="pgR-SL-cRm"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfg-uz-55W">
@@ -302,7 +304,10 @@
                                     <constraint firstAttribute="width" constant="100" id="CZw-35-MBp"/>
                                     <constraint firstAttribute="height" constant="30" id="U7k-4b-fa9"/>
                                 </constraints>
-                                <state key="normal" title="Upload Image"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="15"/>
+                                <state key="normal" title="Upload Image">
+                                    <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="onUploadImageTapped:" destination="kTh-J7-M1r" eventType="touchUpInside" id="P0Z-lj-Kk0"/>
                                 </connections>
@@ -313,7 +318,7 @@
                                     <constraint firstAttribute="height" constant="29" id="lKX-ZB-wK3"/>
                                     <constraint firstAttribute="width" constant="237" id="rGD-4x-NYh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -321,13 +326,13 @@
                         <color key="backgroundColor" red="0.94257614209999996" green="0.94257614209999996" blue="0.94257614209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oE9-Fa-LKX" firstAttribute="centerX" secondItem="FlD-xq-KsZ" secondAttribute="centerX" id="23h-EG-yft"/>
+                            <constraint firstItem="uFO-CO-ZyH" firstAttribute="centerX" secondItem="FlD-xq-KsZ" secondAttribute="centerX" id="D10-rB-aZu"/>
+                            <constraint firstItem="uFO-CO-ZyH" firstAttribute="centerY" secondItem="FlD-xq-KsZ" secondAttribute="centerY" constant="-95.5" id="La5-kW-i4F"/>
                             <constraint firstItem="Cfg-uz-55W" firstAttribute="centerY" secondItem="FlD-xq-KsZ" secondAttribute="centerY" constant="9.5" id="NN8-bK-i0u"/>
                             <constraint firstItem="TWN-WS-fGK" firstAttribute="centerY" secondItem="FlD-xq-KsZ" secondAttribute="centerY" constant="-213" id="NOo-h0-GaA"/>
                             <constraint firstItem="TWN-WS-fGK" firstAttribute="centerX" secondItem="FlD-xq-KsZ" secondAttribute="centerX" id="TVR-4P-qHJ"/>
                             <constraint firstItem="oE9-Fa-LKX" firstAttribute="centerY" secondItem="FlD-xq-KsZ" secondAttribute="centerY" constant="79.5" id="V6r-6G-T4u"/>
                             <constraint firstItem="Cfg-uz-55W" firstAttribute="centerX" secondItem="FlD-xq-KsZ" secondAttribute="centerX" id="aQN-gN-YL3"/>
-                            <constraint firstItem="uFO-CO-ZyH" firstAttribute="centerY" secondItem="FlD-xq-KsZ" secondAttribute="centerY" constant="-100.5" id="irx-cs-GmG"/>
-                            <constraint firstItem="uFO-CO-ZyH" firstAttribute="centerX" secondItem="FlD-xq-KsZ" secondAttribute="centerX" id="wO5-J0-Mfp"/>
                         </constraints>
                     </view>
                     <connections>
@@ -357,6 +362,7 @@
                                     <constraint firstAttribute="width" constant="300" id="cuF-wK-djE"/>
                                     <constraint firstAttribute="height" constant="40" id="mFj-TY-ORw"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
                                 <state key="normal" title="Continue"/>
                                 <connections>
                                     <segue destination="P4Z-Lg-7Ns" kind="show" id="Ioz-Dm-i6J"/>
@@ -376,7 +382,10 @@
                                     <constraint firstAttribute="width" constant="100" id="Fqn-rc-mdT"/>
                                     <constraint firstAttribute="height" constant="30" id="q2S-c7-s5I"/>
                                 </constraints>
-                                <state key="normal" title="Upload Image"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="15"/>
+                                <state key="normal" title="Upload Image">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="onUploadImageTapped:" destination="ZmM-sI-rXd" eventType="touchUpInside" id="mUx-KQ-w2O"/>
                                 </connections>
@@ -387,7 +396,7 @@
                                     <constraint firstAttribute="width" constant="227" id="B5U-8c-Zmh"/>
                                     <constraint firstAttribute="height" constant="29" id="oNa-lY-5hD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -482,6 +491,6 @@
         <image name="photo" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Do9-Pu-Mec"/>
+        <segue reference="Ioz-Dm-i6J"/>
     </inferredMetricsTieBreakers>
 </document>
