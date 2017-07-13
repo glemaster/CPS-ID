@@ -36,15 +36,22 @@ class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         picker.dataSource = self
         scrollTextField.inputView = picker
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let dvc = segue.destination as! FourthViewController
-        idInfo2.school = scrollTextField.text!
-        dvc.idInfo3 = idInfo2
+        if scrollTextField.text == "" {
+            let invalid = UIAlertController(title: "Please Choose a School", message: nil, preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            invalid.addAction(okAction)
+            present(invalid, animated: true, completion: nil)
+        }
+        else {
+            let dvc = segue.destination as! FourthViewController
+            idInfo2.school = scrollTextField.text!
+            dvc.idInfo3 = idInfo2
+        }
     }
-
 }
