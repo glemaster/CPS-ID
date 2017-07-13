@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5205981D1F1834CF007ED373 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5205981C1F1834CF007ED373 /* OpenSans-Light.ttf */; };
+		5205981F1F1834DA007ED373 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5205981E1F1834DA007ED373 /* OpenSans-Regular.ttf */; };
 		5284A2971F155F0800B0B7FA /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284A2961F155F0800B0B7FA /* FourthViewController.swift */; };
 		5284A2991F155F1C00B0B7FA /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284A2981F155F1C00B0B7FA /* FifthViewController.swift */; };
 		5284A29C1F1669E700B0B7FA /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5284A29A1F1669E700B0B7FA /* Realm.framework */; };
@@ -61,6 +63,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5205981C1F1834CF007ED373 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Light.ttf"; path = "CPS ID/open-sans/OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		5205981E1F1834DA007ED373 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.ttf"; path = "CPS ID/open-sans/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		5284A2961F155F0800B0B7FA /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		5284A2981F155F1C00B0B7FA /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		5284A29A1F1669E700B0B7FA /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 		6814EDED1F101A3200DA7381 = {
 			isa = PBXGroup;
 			children = (
+				5205981E1F1834DA007ED373 /* OpenSans-Regular.ttf */,
+				5205981C1F1834CF007ED373 /* OpenSans-Light.ttf */,
 				5284A29A1F1669E700B0B7FA /* Realm.framework */,
 				5284A29B1F1669E700B0B7FA /* RealmSwift.framework */,
 				6814EDF81F101A3200DA7381 /* CPS ID */,
@@ -146,9 +152,9 @@
 				5284A2981F155F1C00B0B7FA /* FifthViewController.swift */,
 				680C43841F14F5FE0010647E /* FinalViewController.swift */,
 				52ABD39F1F150E8C0002E82C /* RegistrationInfo.swift */,
+				5284A2A31F17FF4000B0B7FA /* ListOfSchools.swift */,
 				6814EDFD1F101A3200DA7381 /* Main.storyboard */,
 				6814EE001F101A3200DA7381 /* Assets.xcassets */,
-				5284A2A31F17FF4000B0B7FA /* ListOfSchools.swift */,
 				680C43D71F17EF950010647E /* open-sans */,
 				6814EE021F101A3200DA7381 /* LaunchScreen.storyboard */,
 				6814EE051F101A3200DA7381 /* Info.plist */,
@@ -286,6 +292,8 @@
 				6814EE041F101A3200DA7381 /* LaunchScreen.storyboard in Resources */,
 				680C43D81F17EF950010647E /* open-sans in Resources */,
 				6814EE011F101A3200DA7381 /* Assets.xcassets in Resources */,
+				5205981D1F1834CF007ED373 /* OpenSans-Light.ttf in Resources */,
+				5205981F1F1834DA007ED373 /* OpenSans-Regular.ttf in Resources */,
 				6814EDFF1F101A3200DA7381 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

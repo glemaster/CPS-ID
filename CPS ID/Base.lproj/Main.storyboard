@@ -453,17 +453,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xL5-2T-nOG">
-                                <rect key="frame" x="171" y="261" width="167" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="167" id="Q1G-cd-JJ1"/>
-                                    <constraint firstAttribute="height" constant="40" id="VfV-eH-Jj8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZMw-v8-KsB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZMw-v8-KsB">
                                 <rect key="frame" x="30" y="139" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="1A4-4Y-Zbz"/>
@@ -497,6 +487,16 @@
                                     <constraint firstAttribute="width" constant="318" id="TCJ-d4-NSN"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xL5-2T-nOG">
+                                <rect key="frame" x="171" y="261" width="167" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="Q1G-cd-JJ1"/>
+                                    <constraint firstAttribute="height" constant="40" id="VfV-eH-Jj8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.94257614209999996" green="0.94257614209999996" blue="0.94257614209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -536,6 +536,6 @@
         <image name="photo" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ioz-Dm-i6J"/>
+        <segue reference="Do9-Pu-Mec"/>
     </inferredMetricsTieBreakers>
 </document>
