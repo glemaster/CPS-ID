@@ -32,6 +32,7 @@ class SecondViewController: UIViewController {
             let invalid = UIAlertController(title: "Please Enter All Text Fields", message: nil, preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             invalid.addAction(okAction)
+            present(invalid, animated: true, completion: nil)
         }
         else {
             let dvc = segue.destination as! ThirdViewController
