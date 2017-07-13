@@ -8,6 +8,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -27,7 +35,7 @@
                                     <constraint firstAttribute="width" constant="300" id="hDj-em-a74"/>
                                     <constraint firstAttribute="height" constant="147" id="xT0-sY-gt2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -38,6 +46,7 @@
                                     <constraint firstAttribute="width" constant="300" id="C0u-cw-Cjy"/>
                                     <constraint firstAttribute="height" constant="40" id="E4e-je-mw6"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
                                 <state key="normal" title="Get Started"/>
                                 <connections>
                                     <segue destination="al5-iG-xL0" kind="show" id="bp5-Lg-9qw"/>
@@ -49,7 +58,7 @@
                                     <constraint firstAttribute="height" constant="21" id="dsN-T7-tMp"/>
                                     <constraint firstAttribute="width" constant="144" id="rvO-IW-OLQ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -473,6 +482,6 @@
         <image name="photo" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ioz-Dm-i6J"/>
+        <segue reference="Do9-Pu-Mec"/>
     </inferredMetricsTieBreakers>
 </document>
