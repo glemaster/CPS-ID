@@ -15,22 +15,21 @@ class ViewController: UIViewController {
     lazy var id: Results<RegistrationInfo> = {
         self.realm.objects(RegistrationInfo.self)
     }()
-    
+    let vc = FinalViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //print(id[0])
         testIfRealmIsFilledIn()
     }
     
     func testIfRealmIsFilledIn() {
         if id.count >= 1 {
-            if id[0].name != "" {
-                performSegue(withIdentifier: "realmSegue", sender: nil)
-            }
-            else {
-                return
-            }
+            //if id[0].name != "" {
+              //  present(vc, animated: true, completion: nil)
+            //}
+            //else {
+              //  return
+            //}
         }
     }
     

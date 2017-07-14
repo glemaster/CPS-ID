@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 
 class FinalViewController: UIViewController {
-
+    
     @IBOutlet weak var schoolNameLabel: UILabel!
     @IBOutlet weak var schoolImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -21,27 +21,44 @@ class FinalViewController: UIViewController {
     let realm = try! Realm()
     var idInfo5 = RegistrationInfo()
     let realmRef = FifthViewController()
+    lazy var id: Results<RegistrationInfo> = {
+        self.realm.objects(RegistrationInfo.self)
+    }()
+    var information = RegistrationInfo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        schoolImage.image = UIImage(data : idInfo5.profilePic)
+        addToRealm()
+        setFields()
+    }
+    
+    func setFields() {
+        //print(id[0])
+        //print(id[0].name)
         nameLabel.text = idInfo5.name
+        schoolImage.image = UIImage(data : idInfo5.profilePic)
         schoolNameLabel.text = idInfo5.school
         IDImage.image = UIImage(data : idInfo5.barcodePic)
         IDLabel.text = "ID Number \(String(idInfo5.idNum))"
         advisoryLabel.text = "Adv.\(String(idInfo5.advisoryNum))"
         lunchLabel.text = "Lunch \(String(idInfo5.lunchPeriod))"
-        print(idInfo5.name)
-        print(idInfo5.advisoryNum)
-        print(idInfo5.lunchPeriod)
-        print(idInfo5.idNum)
-        print(idInfo5.school)
-        print(idInfo5.barcodePic)
-        print(idInfo5.profilePic)
     }
-
+    
+    func addToRealm() {
+        try! self.realm.write {
+            information.name = idInfo5.name
+            information.lunchPeriod = idInfo5.lunchPeriod
+            information.idNum = idInfo5.idNum
+            information.barcodePic = idInfo5.barcodePic
+            information.advisoryNum = idInfo5.advisoryNum
+            information.profilePic = idInfo5.profilePic
+            information.school = idInfo5.school
+            self.realm.add(information)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
 }

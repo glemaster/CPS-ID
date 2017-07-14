@@ -14,7 +14,6 @@ class FifthViewController: UIViewController, UIImagePickerControllerDelegate, UI
     let imagePicker = UIImagePickerController()
     @IBOutlet weak var imageView: UIImageView!
     var idInfo4 = RegistrationInfo()
-    var information = RegistrationInfo()
     
     let realm = try! Realm()
     lazy var id: Results<RegistrationInfo> = {
@@ -48,15 +47,5 @@ class FifthViewController: UIViewController, UIImagePickerControllerDelegate, UI
         let dvc = segue.destination as! FinalViewController
         idInfo4.barcodePic = UIImagePNGRepresentation(imageView.image!)!
         dvc.idInfo5 = idInfo4
-        
-        try! self.realm.write {
-            information.name = idInfo4.name
-            information.lunchPeriod = idInfo4.lunchPeriod
-            information.idNum = idInfo4.idNum
-            information.barcodePic = UIImagePNGRepresentation(imageView.image!)!
-            information.advisoryNum = idInfo4.advisoryNum
-            information.profilePic = idInfo4.profilePic
-            information.school = idInfo4.school
-        }
     }
 }
