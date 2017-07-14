@@ -19,11 +19,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //print(id[0])
         testIfRealmIsFilledIn()
     }
     
     func testIfRealmIsFilledIn() {
-        if id.count == 1 {
+        if id.count >= 1 {
             if id[0].name != "" {
                 performSegue(withIdentifier: "realmSegue", sender: nil)
             }
