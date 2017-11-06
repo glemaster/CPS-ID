@@ -18,13 +18,14 @@ class FinalViewController: UIViewController {
     @IBOutlet weak var IDLabel: UILabel!
     @IBOutlet weak var advisoryLabel: UILabel!
     @IBOutlet weak var lunchLabel: UILabel!
+   
     let realm = try! Realm()
     var idInfo5 = RegistrationInfo()
+    var information = RegistrationInfo()
     let realmRef = FifthViewController()
     lazy var id: Results<RegistrationInfo> = {
         self.realm.objects(RegistrationInfo.self)
     }()
-    var information = RegistrationInfo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
