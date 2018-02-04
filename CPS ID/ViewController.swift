@@ -7,10 +7,10 @@
 //
 
 import UIKit
-import RealmSwift
+//import RealmSwift
 
 class ViewController: UIViewController {
-    
+    /*
     let realm = try! Realm()
     lazy var id: Results<RegistrationInfo> = {
         self.realm.objects(RegistrationInfo.self)
@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         testIfRealmIsFilledIn()
     }
+ 
     
     func testIfRealmIsFilledIn() {
         if id.count >= 1 {
@@ -32,6 +33,7 @@ class ViewController: UIViewController {
             //}
         }
     }
+ */
     
 }
 

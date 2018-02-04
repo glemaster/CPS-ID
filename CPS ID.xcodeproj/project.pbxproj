@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		360AFD1F2022738C003F1F98 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5284A29A1F1669E700B0B7FA /* Realm.framework */; };
+		360AFD202022738C003F1F98 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5284A29A1F1669E700B0B7FA /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		360AFD212022738C003F1F98 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5284A29B1F1669E700B0B7FA /* RealmSwift.framework */; };
+		360AFD222022738C003F1F98 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5284A29B1F1669E700B0B7FA /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5205981D1F1834CF007ED373 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5205981C1F1834CF007ED373 /* OpenSans-Light.ttf */; };
 		5205981F1F1834DA007ED373 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5205981E1F1834DA007ED373 /* OpenSans-Regular.ttf */; };
 		5284A2971F155F0800B0B7FA /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284A2961F155F0800B0B7FA /* FourthViewController.swift */; };
 		5284A2991F155F1C00B0B7FA /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284A2981F155F1C00B0B7FA /* FifthViewController.swift */; };
-		5284A29C1F1669E700B0B7FA /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5284A29A1F1669E700B0B7FA /* Realm.framework */; };
-		5284A29D1F1669E700B0B7FA /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5284A29A1F1669E700B0B7FA /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5284A29E1F1669E700B0B7FA /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5284A29B1F1669E700B0B7FA /* RealmSwift.framework */; };
-		5284A29F1F1669E700B0B7FA /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5284A29B1F1669E700B0B7FA /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5284A2A41F17FF4000B0B7FA /* ListOfSchools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284A2A31F17FF4000B0B7FA /* ListOfSchools.swift */; };
 		52ABD3A01F150E8C0002E82C /* RegistrationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ABD39F1F150E8C0002E82C /* RegistrationInfo.swift */; };
 		680C43851F14F5FE0010647E /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C43841F14F5FE0010647E /* FinalViewController.swift */; };
@@ -48,14 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5284A2A01F1669E700B0B7FA /* Embed Frameworks */ = {
+		360AFD232022738C003F1F98 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5284A29F1F1669E700B0B7FA /* RealmSwift.framework in Embed Frameworks */,
-				5284A29D1F1669E700B0B7FA /* Realm.framework in Embed Frameworks */,
+				360AFD222022738C003F1F98 /* RealmSwift.framework in Embed Frameworks */,
+				360AFD202022738C003F1F98 /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,8 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5284A29E1F1669E700B0B7FA /* RealmSwift.framework in Frameworks */,
-				5284A29C1F1669E700B0B7FA /* Realm.framework in Frameworks */,
+				360AFD212022738C003F1F98 /* RealmSwift.framework in Frameworks */,
+				360AFD1F2022738C003F1F98 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +190,7 @@
 				6814EDF21F101A3200DA7381 /* Sources */,
 				6814EDF31F101A3200DA7381 /* Frameworks */,
 				6814EDF41F101A3200DA7381 /* Resources */,
-				5284A2A01F1669E700B0B7FA /* Embed Frameworks */,
+				360AFD232022738C003F1F98 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,8 +249,7 @@
 				TargetAttributes = {
 					6814EDF51F101A3200DA7381 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = E26TACMX2D;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					6814EE091F101A3200DA7381 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -477,7 +476,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = E26TACMX2D;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -486,6 +486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Test.CPS-ID";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -494,7 +495,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = E26TACMX2D;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -503,6 +505,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Test.CPS-ID";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import RealmSwift
+//import RealmSwift
 
 class FifthViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     
@@ -15,11 +15,13 @@ class FifthViewController: UIViewController, UIImagePickerControllerDelegate, UI
     @IBOutlet weak var imageView: UIImageView!
     var idInfo4 = RegistrationInfo()
     
+    /*
     let realm = try! Realm()
     lazy var id: Results<RegistrationInfo> = {
         self.realm.objects(RegistrationInfo.self)
     }()
-    
+    */
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
