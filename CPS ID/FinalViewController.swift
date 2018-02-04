@@ -27,6 +27,7 @@ class FinalViewController: UIViewController {
     //    self.realm.objects(RegistrationInfo.self)
     }()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //addToRealm()
