@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		360AFD1F2022738C003F1F98 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5284A29A1F1669E700B0B7FA /* Realm.framework */; };
-		360AFD202022738C003F1F98 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5284A29A1F1669E700B0B7FA /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		360AFD212022738C003F1F98 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5284A29B1F1669E700B0B7FA /* RealmSwift.framework */; };
-		360AFD222022738C003F1F98 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5284A29B1F1669E700B0B7FA /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5205981D1F1834CF007ED373 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5205981C1F1834CF007ED373 /* OpenSans-Light.ttf */; };
 		5205981F1F1834DA007ED373 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5205981E1F1834DA007ED373 /* OpenSans-Regular.ttf */; };
 		5284A2971F155F0800B0B7FA /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284A2961F155F0800B0B7FA /* FourthViewController.swift */; };
@@ -47,21 +43,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		360AFD232022738C003F1F98 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				360AFD222022738C003F1F98 /* RealmSwift.framework in Embed Frameworks */,
-				360AFD202022738C003F1F98 /* Realm.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		5205981C1F1834CF007ED373 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Light.ttf"; path = "CPS ID/open-sans/OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		5205981E1F1834DA007ED373 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.ttf"; path = "CPS ID/open-sans/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
@@ -95,8 +76,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				360AFD212022738C003F1F98 /* RealmSwift.framework in Frameworks */,
-				360AFD1F2022738C003F1F98 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +169,6 @@
 				6814EDF21F101A3200DA7381 /* Sources */,
 				6814EDF31F101A3200DA7381 /* Frameworks */,
 				6814EDF41F101A3200DA7381 /* Resources */,
-				360AFD232022738C003F1F98 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

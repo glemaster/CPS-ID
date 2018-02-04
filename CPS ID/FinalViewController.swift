@@ -23,10 +23,11 @@ class FinalViewController: UIViewController {
     var idInfo5 = RegistrationInfo()
     var information = RegistrationInfo()
     //let realmRef = FifthViewController()
+    /*
     lazy var id: Results<RegistrationInfo> = {
-    //    self.realm.objects(RegistrationInfo.self)
+        self.realm.objects(RegistrationInfo.self)
     }()
-    
+    */
     
     override func viewDidLoad() {
         super.viewDidLoad()
