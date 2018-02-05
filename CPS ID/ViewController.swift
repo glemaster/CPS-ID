@@ -11,17 +11,17 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let realm = try! Realm()
+    //let realm = try! Realm()
+    /*
     lazy var id: Results<RegistrationInfo> = {
-        self.realm.objects(RegistrationInfo.self)
+      //  self.realm.objects(RegistrationInfo.self)
     }()
+    */
     let vc = FinalViewController()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        testIfRealmIsFilledIn()
-    }
     
+ 
+    /*
     func testIfRealmIsFilledIn() {
         if id.count >= 1 {
             //if id[0].name != "" {
@@ -31,6 +31,12 @@ class ViewController: UIViewController {
               //  return
             //}
         }
+    }
+ */
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //testIfRealmIsFilledIn()
     }
     
 }*/
