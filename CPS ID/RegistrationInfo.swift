@@ -8,9 +8,9 @@
 
 import Foundation
 import UIKit
-import RealmSwift
+//import RealmSwift
 
-class RegistrationInfo: Object  {
+class RegistrationInfo: NSObject  {
     
     dynamic var name = String()
     dynamic var advisoryNum = Int()

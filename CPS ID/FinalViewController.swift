@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import RealmSwift
+//import RealmSwift
 
 class FinalViewController: UIViewController {
     
@@ -18,23 +18,23 @@ class FinalViewController: UIViewController {
     @IBOutlet weak var IDLabel: UILabel!
     @IBOutlet weak var advisoryLabel: UILabel!
     @IBOutlet weak var lunchLabel: UILabel!
-    let realm = try! Realm()
+    
+    //let realm = try! Realm()
     var idInfo5 = RegistrationInfo()
-    let realmRef = FifthViewController()
+    //let realmRef = FifthViewController()
     lazy var id: Results<RegistrationInfo> = {
-        self.realm.objects(RegistrationInfo.self)
+    //    self.realm.objects(RegistrationInfo.self)
     }()
-    var information = RegistrationInfo()
+    //var information = RegistrationInfo()
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addToRealm()
+        //addToRealm()
         setFields()
     }
     
     func setFields() {
-        //print(id[0])
-        //print(id[0].name)
         nameLabel.text = idInfo5.name
         schoolImage.image = UIImage(data : idInfo5.profilePic)
         schoolNameLabel.text = idInfo5.school
@@ -44,7 +44,7 @@ class FinalViewController: UIViewController {
         lunchLabel.text = "Lunch \(String(idInfo5.lunchPeriod))"
     }
     
-    func addToRealm() {
+    /*func addToRealm() {
         try! self.realm.write {
             information.name = idInfo5.name
             information.lunchPeriod = idInfo5.lunchPeriod
@@ -56,6 +56,7 @@ class FinalViewController: UIViewController {
             self.realm.add(information)
         }
     }
+ */]
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
