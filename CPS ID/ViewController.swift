@@ -7,37 +7,36 @@
 //
 
 import UIKit
-/*import RealmSwift
+import RealmSwift
 
 class ViewController: UIViewController {
     
-    //let realm = try! Realm()
-    /*
+    let realm = try! Realm()
+    
     lazy var id: Results<RegistrationInfo> = {
-      //  self.realm.objects(RegistrationInfo.self)
+        self.realm.objects(RegistrationInfo.self)
     }()
-    */
+    
     let vc = FinalViewController()
     
     
  
-    /*
+   
     func testIfRealmIsFilledIn() {
         if id.count >= 1 {
-            //if id[0].name != "" {
-              //  present(vc, animated: true, completion: nil)
-            //}
-            //else {
-              //  return
-            //}
+            if id[0].name != "" {
+              present(vc, animated: true, completion: nil)
+            }
+            else {
+                return
+            }
         }
     }
- */
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //testIfRealmIsFilledIn()
     }
-    
-}*/
+}
 
