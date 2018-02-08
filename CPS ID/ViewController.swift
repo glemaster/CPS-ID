@@ -11,15 +11,15 @@ import RealmSwift
 
 class ViewController: UIViewController {
     
-    let realm = try! Realm()
+    var objects = [Any] ()
     
+    let realm = try! Realm()
     lazy var id: Results<RegistrationInfo> = {
         self.realm.objects(RegistrationInfo.self)
     }()
     
     let vc = FinalViewController()
-    
-    
+
  
    
     func testIfRealmIsFilledIn() {
@@ -37,6 +37,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //testIfRealmIsFilledIn()
-    }
+        
+}
+    
 }
 

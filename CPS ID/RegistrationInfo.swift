@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import RealmSwift
 
-class RegistrationInfo: NSObject  {
+class RegistrationInfo: Object  {
     
     dynamic var name = String()
     dynamic var advisoryNum = Int()

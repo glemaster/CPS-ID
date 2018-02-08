@@ -9,6 +9,8 @@
 import UIKit
 import RealmSwift
 
+
+
 class FinalViewController: UIViewController {
     
     @IBOutlet weak var schoolNameLabel: UILabel!
@@ -25,8 +27,9 @@ class FinalViewController: UIViewController {
     lazy var id: Results<RegistrationInfo> = {55
         self.realm.objects(RegistrationInfo.self)
     }()
+
+    
     var information = RegistrationInfo()
- 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +46,7 @@ class FinalViewController: UIViewController {
         advisoryLabel.text = "Adv.\(String(idInfo5.advisoryNum))"
         lunchLabel.text = "Lunch \(String(idInfo5.lunchPeriod))"
     }
+    
     
     func addToRealm() {
         try! self.realm.write {
