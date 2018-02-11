@@ -2,7 +2,7 @@
 //  FifthViewController.swift
 //  CPS ID
 //
-//  Created by John Wehrenberg on 7/10/17.
+//  Created by Gwyneth Lemaster on 7/10/17.
 //  Copyright © 2017 Gwyneth Lemaster. All rights reserved.
 //
 
@@ -11,12 +11,14 @@ import RealmSwift
 
 class FifthViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     
-    let imagePicker = UIImagePickerController()
+    
     @IBOutlet weak var imageView: UIImageView!
+    
+    let imagePicker = UIImagePickerController()
     var idInfo4 = RegistrationInfo()
     
     let realm = try! Realm()
-    lazy var id: Results<RegistrationInfo> = {
+    lazy var ids: Results<RegistrationInfo> = {
         self.realm.objects(RegistrationInfo.self)
     }()
     

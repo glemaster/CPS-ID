@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     var objects = [Any] ()
     
     let realm = try! Realm()
-    lazy var id: Results<RegistrationInfo> = {
+    lazy var ids: Results<RegistrationInfo> = {
         self.realm.objects(RegistrationInfo.self)
     }()
     
@@ -23,8 +23,8 @@ class ViewController: UIViewController {
  
    
     func testIfRealmIsFilledIn() {
-        if id.count >= 1 {
-            if id[0].name != "" {
+        if ids.count >= 1 {
+            if ids[0].name != "" {
               present(vc, animated: true, completion: nil)
             }
             else {
@@ -37,6 +37,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //testIfRealmIsFilledIn()
+        for id in ids {
+            objects.append(id)
+        }
         
 }
     

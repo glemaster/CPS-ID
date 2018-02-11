@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class SecondViewController: UIViewController {
     
@@ -15,6 +16,10 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var regLunchPeriod: UITextField!
     @IBOutlet weak var regIDNumber: UITextField!
     var idInfo = RegistrationInfo()
+    
+    let realm = try! Realm()
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

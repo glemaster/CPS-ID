@@ -9,8 +9,6 @@
 import UIKit
 import RealmSwift
 
-
-
 class FinalViewController: UIViewController {
     
     @IBOutlet weak var schoolNameLabel: UILabel!
@@ -21,10 +19,12 @@ class FinalViewController: UIViewController {
     @IBOutlet weak var advisoryLabel: UILabel!
     @IBOutlet weak var lunchLabel: UILabel!
     
+    let imagePicker = UIImagePickerController()
+    
     let realm = try! Realm()
     var idInfo5 = RegistrationInfo()
     let realmRef = FifthViewController()
-    lazy var id: Results<RegistrationInfo> = {55
+    lazy var ids: Results<RegistrationInfo> = {//55
         self.realm.objects(RegistrationInfo.self)
     }()
 

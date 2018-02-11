@@ -9,6 +9,7 @@
 import UIKit
 
 class FourthViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
+   
     @IBOutlet weak var imageView: UIImageView!
 
     let imagePicker = UIImagePickerController()

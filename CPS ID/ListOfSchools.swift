@@ -10,7 +10,9 @@ import UIKit
 
 class listOfSchools: NSObject {
     
-    let list = ["Walter Payton College Prep",
+    let list = ["-Select School-",
+                
+                "Walter Payton College Prep",
         
                 "Northside College Preparatory High School",
                 
